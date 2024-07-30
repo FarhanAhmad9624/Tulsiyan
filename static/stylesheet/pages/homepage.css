@@ -11,31 +11,32 @@
   src: url(../../fonts/Bilbo_Swash_Caps/BilboSwashCaps-Regular.ttf);
 }
 #heading-offers{
-    padding: 0.3%;
-    font-family: poppins;
-    font-size: 62%;
+    padding: 0.1em;
+    font-family: poppins
 }
 
 
 div#upper-rectangle{
-  margin-top: 1em;
+  margin-top: 1.5rem;
 }
 
+/* USER NAVIGATION**************************************   */
+
 #profile div{
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../icons/profile-thin.svg);
 }
 
 #liked-items div{
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../icons/heart-thin.svg);
 }
 
 #cart div{
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../icons/bag-broken.svg);
 }
 
@@ -47,12 +48,22 @@ div#upper-rectangle{
 
 #reviews{
   position: relative;
-  top: 11px;
+  top: 0.5em;
+  font-family: bilbo;
+  color: black;
+  font-size: 120%;
 }
 
 #search-bar{
   height: 1.8rem;
   width: 15rem;
+  padding-left: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.384);
+  font-weight: 1000;
+  background-image: url(../../icons/search-thin.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.5em;
 }
 
 #user-navigation #navigation-content{
@@ -62,4 +73,45 @@ div#upper-rectangle{
   top: 1rem;
   right: 1rem;
   gap: 1rem;
+}
+
+/* PRODUCT NAVIGATION *************************************** */
+
+#product-navigation{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(102, 101, 101, 0.541);
+  border-bottom: 1px solid rgba(102, 101, 101, 0.541);
+  height: 3rem;
+  gap: 73rem;
+}
+
+#product-navigation ul{
+  list-style: none;
+}
+
+#left-navigation{
+  display: inline-block;
+
+}
+
+#right-navigation{
+  display: inline-block;
+}
+
+ul#left-navigation-lists, ul#right-navigation-lists{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: poppins;
+  font-weight: bold;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+#filters{
+  background-image: url(../../icons/filters.svg);
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
 }

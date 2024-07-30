@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./static/stylesheet/pages/homepage.css">
     <link rel="stylesheet" href="./static/stylesheet/layout/layout.css">
+    <link rel="stylesheet" href="./static/stylesheet/layout/drop-down.css">
 
     <title>Home page</title>
 </head>
@@ -17,7 +18,7 @@
     <header id="main-header">
         <!-- top most offer strip -->
         <div id="heading-offers" class = "background-black center-child">
-            <p id = "offer-strip" style="word-spacing: 5px; font-weight: 50;">BIGGEST DISCOUNT UPTO <span style="font-weight:1000;">50%</span> OFF , <spand style="font-weight: 1000;">BUY 1  GET 1 FREE</spand> AND MANY MORE</p>
+            <p id = "offer-strip" style="word-spacing: 5px; font-weight: 50; font-size: 0.8rem;">BIGGEST DISCOUNT UPTO <span style="font-weight:bold;">50%</span> OFF , <spand style="font-weight: bold;">BUY 1  GET 1 FREE</spand> AND MANY MORE</p>
         </div>
 
         
@@ -40,32 +41,37 @@
 
 
             <div id = "product-navigation">
-                <ul id = "main-list">
-                    <li id="00001">CASUAL</li>
-                    <li id="00002">WEDDING</li>
-                    <li id="00003">OCCASION</li>
+                
+                <div id="left-navigation">
+                <ul id = "left-navigation-lists">
+                    <li id="00001" class = pointer>CASUAL</li>
+                    <li id="00002" class = pointer>WEDDING</li>
+                    <li id="00003" class = pointer>OCCASION</li>
+                </ul>
+                </div>
 
-                    <ul id="sub-list">
+                <div id = right-navigation>
+                    <ul id="right-navigation-lists">
                         <!-- filters -->
-                        <li id="10001"><div id="filters"></div></li>
+                        <li id="10001"><a id="filters" title = filters href = "#" class = icon></a></li>
 
                         <!-- collection -->
-                        <li id="10002">COLLECTION
-                            <ul id="collection-lists">
+                        <li id="10002" class = option-name><p>COLLECTION</p>
+                            <ul id="collection-lists" class = options>
                                 <li id="11001">item01</li>
                                 <li id="11002">item02</li>
                             </ul>
                         </li>
 
                         <!-- categories -->
-                         <li id="10003">CATEGORIES
-                            <ul id="category-list">
+                         <li id="10003" class = option-name>CATEGORIES
+                            <ul id="category-list" class = options>
                                 <li id="11101">item01</li>
                                 <li id="11102">item02</li>
                             </ul>
                          </li>
                     </ul>
-                </ul>   
+                </div>   
             </div>
         </div>
     </header>
