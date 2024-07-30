@@ -1,0 +1,65 @@
+/* styling home page */
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../fonts/Poppins/Poppins-Light.ttf');
+  }
+
+
+@font-face {
+  font-family: 'bilbo';
+  src: url(../../fonts/Bilbo_Swash_Caps/BilboSwashCaps-Regular.ttf);
+}
+#heading-offers{
+    padding: 0.3%;
+    font-family: poppins;
+    font-size: 62%;
+}
+
+
+div#upper-rectangle{
+  margin-top: 1em;
+}
+
+#profile div{
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../../icons/profile-thin.svg);
+}
+
+#liked-items div{
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../../icons/heart-thin.svg);
+}
+
+#cart div{
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../../icons/bag-broken.svg);
+}
+
+#user-navigation{
+  display: flex;
+  background-color: #FFF1D2;
+  justify-content: end;
+}
+
+#reviews{
+  position: relative;
+  top: 11px;
+}
+
+#search-bar{
+  height: 1.8rem;
+  width: 15rem;
+}
+
+#user-navigation #navigation-content{
+  display: flex;
+  height: 5rem;
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+  gap: 1rem;
+}

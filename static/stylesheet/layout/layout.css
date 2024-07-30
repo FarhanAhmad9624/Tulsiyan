@@ -1,0 +1,25 @@
+/* stylesheet for layout of pages */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+  
+
+.center-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-black{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.icon{
+    background-repeat: no-repeat;
+    background-size: auto;
+}
