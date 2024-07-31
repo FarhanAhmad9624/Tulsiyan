@@ -17,26 +17,26 @@
 
 
 div#upper-rectangle{
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
 }
 
 /* USER NAVIGATION**************************************   */
 
 #profile div{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.5em;
+  height: 1.5em;
   background-image: url(../../icons/profile-thin.svg);
 }
 
 #liked-items div{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.5em;
+  height: 1.5em;
   background-image: url(../../icons/heart-thin.svg);
 }
 
 #cart div{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.5em;
+  height: 1.5em;
   background-image: url(../../icons/bag-broken.svg);
 }
 
@@ -55,24 +55,23 @@ div#upper-rectangle{
 }
 
 #search-bar{
-  height: 1.8rem;
+  height: 1.8em;
   width: 15rem;
-  padding-left: 1.5rem;
+  padding-left: 2em;
   border: 1px solid rgba(0, 0, 0, 0.384);
-  font-weight: 1000;
   background-image: url(../../icons/search-thin.svg);
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 1.5em;
+  background-position: left 2% center;
+  background-size: 1em;
 }
 
 #user-navigation #navigation-content{
   display: flex;
-  height: 5rem;
+  height: 5em;
   position: relative;
-  top: 1rem;
-  right: 1rem;
-  gap: 1rem;
+  top: 1em;
+  right: 1em;
+  gap: 1em;
 }
 
 /* PRODUCT NAVIGATION *************************************** */
@@ -82,21 +81,12 @@ div#upper-rectangle{
   align-items: center;
   border-top: 1px solid rgba(102, 101, 101, 0.541);
   border-bottom: 1px solid rgba(102, 101, 101, 0.541);
-  height: 3rem;
-  gap: 73rem;
+  height: 3em;
+  justify-content: space-between;
 }
 
 #product-navigation ul{
   list-style: none;
-}
-
-#left-navigation{
-  display: inline-block;
-
-}
-
-#right-navigation{
-  display: inline-block;
 }
 
 ul#left-navigation-lists, ul#right-navigation-lists{
@@ -106,12 +96,37 @@ ul#left-navigation-lists, ul#right-navigation-lists{
   gap: 1.5rem;
   font-family: poppins;
   font-weight: bold;
-  margin: 0rem 1rem 0rem 1rem;
+  margin: 0em 2em 0em 1em;
 }
 
 #filters{
   background-image: url(../../icons/filters.svg);
   display: inline-block;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+/* product deals*************************************************** */
+#products-deal{
+  min-height: 30em;
+  background-color: #FFF1D2;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+
+#products-deal-lists{
+  display: flex;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#products-deal-lists li{
+  background-color: white;
+  height: 25em;
+  width: 90em;
+  flex-shrink: 0;
+  margin: 6em 2em 1em 1em;
 }

@@ -4,8 +4,14 @@
     margin: 0;
     padding: 0;
     font-size: 0.9vw;
+    box-sizing: border-box;
 }
 
+@media screen and (max-width: 720px){
+    *{
+        font-size: 0.9vh;
+    }
+}
 
 .pointer{
     cursor: pointer;
