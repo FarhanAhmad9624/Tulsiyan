@@ -113,7 +113,7 @@ ul#left-navigation-lists, ul#right-navigation-lists{
   overflow-x: auto;
   white-space: nowrap;
   scroll-snap-type: inline mandatory;
-  
+  scrollbar-width: none;
 }
 
 
