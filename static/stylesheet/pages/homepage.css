@@ -112,12 +112,14 @@ ul#left-navigation-lists, ul#right-navigation-lists{
   background-color: #FFF1D2;
   overflow-x: auto;
   white-space: nowrap;
+  scroll-snap-type: inline mandatory;
+  
 }
 
 
 #products-deal-lists{
   display: flex;
-
+  grid-auto-columns: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -126,7 +128,9 @@ ul#left-navigation-lists, ul#right-navigation-lists{
 #products-deal-lists li{
   background-color: white;
   height: 25em;
-  width: 90em;
+  width: 80vw;
   flex-shrink: 0;
   margin: 6em 2em 1em 1em;
+  scroll-snap-align: start;
+  
 }
