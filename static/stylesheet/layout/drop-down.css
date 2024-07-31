@@ -1,7 +1,27 @@
+.drop-down:active .options, .drop-down:hover ul.options {
+    display: block;
+}
+
 .options{
+    position: absolute;
+    margin-left: -3.5em;
+    background-color: white;
+    width: 12em;
     display: none;
 }
 
-.option-name p{
+.options li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4em;
+}
+
+.options li:hover{
+    background-color:#FFF1D2;
+    opacity: 40%;
+}
+
+.drop-down p{
     cursor: pointer;
 }

@@ -44,9 +44,9 @@
                 
                 <div id="left-navigation">
                 <ul id = "left-navigation-lists">
-                    <li id="00001" class = pointer>CASUAL</li>
-                    <li id="00002" class = pointer>WEDDING</li>
-                    <li id="00003" class = pointer>OCCASION</li>
+                    <li id="casual" class = pointer>CASUAL</li>
+                    <li id="wedding" class = pointer>WEDDING</li>
+                    <li id="occasion" class = pointer>OCCASION</li>
                 </ul>
                 </div>
 
@@ -56,18 +56,42 @@
                         <li id="10001"><a id="filters" title = filters href = "#" class = icon></a></li>
 
                         <!-- collection -->
-                        <li id="10002" class = option-name><p>COLLECTION</p>
+                        <li id="collection" class = drop-down><p id = collection-label>COLLECTION</p>
                             <ul id="collection-lists" class = options>
-                                <li id="11001">item01</li>
-                                <li id="11002">item02</li>
+                                <li id="11001"><a href="#"></a>Kaveri</li>
+                                <li id="11002"><a href="#"></a>Rachna</li>
+                                <li id="11003"><a href="#"></a>Kalavati</li>
+                                <li id="11004"><a href="#"></a>Gulabo</li>
+                                <li id="11005"><a href="#"></a>Gamil</li>
+                                <li id="11006"><a href="#"></a>Anamika</li>
                             </ul>
                         </li>
 
                         <!-- categories -->
-                         <li id="10003" class = option-name>CATEGORIES
+                         <li id="categories" class = drop-down><p id = categories-label>CATEGORIES</p>
                             <ul id="category-list" class = options>
-                                <li id="11101">item01</li>
-                                <li id="11102">item02</li>
+                                <li id="tag">100% Authentic</li>
+                                <li class=main-categories >COTTON
+                                        <li class = sub-category><a href="#">COTTON MIX</a></li>
+                                        <li class = sub-category><a href="#">COTTON BLEND</a></li>
+                                        <li class = sub-category><a href="#">PURE COTTON</a></li>
+                                </li>
+
+                                <li class="main-categories">SILK
+                                        <li class = sub-category><a href="#">PURE SILK</a></li>
+                                        <li class = sub-category><a href="#">KERLA SILK</a></li>
+                                        <li class = sub-category><a href="#">BENGALI SILK</a></li>
+                                        <li class = sub-category><a href="#">KASHMIRI SILK</a></li>
+                                </li>
+                                <li class="main-categories">JORJET
+                                        <li class = sub-category><a href="#">PURE JORJET</a></li>
+                                        <li class = sub-category><a href="#">JORJET MIX</a></li>
+                                </li>
+                                <li class="main-categories">CHIFFON
+                                        <li class = sub-category><a href="#">PURE CHIFFON</a></li>
+                                        <li class = sub-category><a href="#">CHIFFON MIX</a></li>
+                                        <li class = sub-category><a href="#">CHIFFON-POLYSTER MIX</a></li>
+                                </li>
                             </ul>
                          </li>
                     </ul>
@@ -89,4 +113,5 @@
     </header>
 </body>
     <script src="./static/scripts/scroll.js"></script>
+    <script src="./static/scripts/drop-down.js"></script>
 </html>
