@@ -38,17 +38,17 @@ document.addEventListener('mouseover', (element) => {
 
         //selecting the options of the selected container
         let dropDownId = dropDownArray[i].getAttribute('id');
-        options = document.querySelector(`#${dropDownId} + .options`);
-        if(element.target == dropDownArray[i]){
-            display('block')
+        let containerId = containerArray[i].getAttribute('id');
+        options = document.querySelector(`#${dropDownId} .options`);
+        if(element.target == dropDownArray[i] || element.target == containerArray[i]){
+            try{
+                display('block');
+            }catch{}
         }
         else{
             try{
-                display('none');
-            }
-            catch{
-                
-            }
+            display('none');
+            }catch{}
         }
     
     }
