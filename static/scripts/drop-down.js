@@ -46,9 +46,9 @@ document.addEventListener('mouseover', (element) => {
             }catch{}
         }
         else{
-            try{
-            display('none');
-            }catch{}
+            // try{
+            // display('none');
+            // }catch{}
         }
     
     }
