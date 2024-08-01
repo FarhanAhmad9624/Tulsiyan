@@ -161,14 +161,15 @@ ul#right-navigation-lists{
   background-color: #FFF1D2;
   overflow-x: auto;
   white-space: nowrap;
-  scroll-snap-type: inline mandatory;
+  /* scroll-snap-type:proximity; */
+  scroll-behavior:smooth;
   scrollbar-width: none;
 }
 
 
 #products-deal-lists{
   display: flex;
-  grid-auto-columns: 100%;
+  /* grid-auto-columns: 100%; */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -181,5 +182,28 @@ ul#right-navigation-lists{
   flex-shrink: 0;
   margin: 6em 2em 1em 1em;
   scroll-snap-align: start;
-  
+}
+
+/*  *************************   LOWER RECTANGLE ********************** */
+
+h1, h1 span{
+  word-spacing: 0.5em;
+  font-size:x-large;
+}
+
+h1{
+  color: #f8af1d;
+}
+
+h1 span{
+  color: #f7a503;
+}
+
+#heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  min-height: 8em;
+
 }

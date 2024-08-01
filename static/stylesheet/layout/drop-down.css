@@ -5,6 +5,7 @@
 .options{
     position: absolute;
     margin-left: -3.5em;
+    margin-top: 1em;
     background-color: white;
     width: 12em;
     display: none;
