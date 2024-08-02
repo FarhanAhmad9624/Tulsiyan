@@ -166,6 +166,9 @@ ul#right-navigation-lists{
   scrollbar-width: none;
 }
 
+#products-deal::-webkit-scrollbar{
+  display: none;
+}
 
 #products-deal-lists{
   display: flex;
@@ -175,7 +178,7 @@ ul#right-navigation-lists{
   margin: 0;
 }
 
-#products-deal-lists li{
+#products-deal-lists li div{
   background-color: white;
   height: 25em;
   width: 80vw;
@@ -203,7 +206,54 @@ h1 span{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   min-height: 8em;
 
+}
+
+/* ************** PREVIEW CONTAINERS******************* */
+
+#collection-preview{
+  overflow-x:auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  direction: rtl;
+  scrollbar-width: none;
+}
+
+#collection-container{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  list-style: none;
+}
+
+/* hide the scrollbar */
+#collection-container::-webkit-scrollbar{
+  display: none;
+}
+
+.preview-container{
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+.preview-container li{
+  flex-shrink: 0;
+}
+
+.preview-container div{
+  height: 702px;
+  width: 379px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.527);
+}
+
+.preview-container a{
+  text-decoration: none;
+}
+
+.preview-container a p{
+  display: flex;
+  justify-content: center;
 }

@@ -1,4 +1,5 @@
-const slider = document.querySelector('#products-deal');
+const slider = document.querySelector('.scroll-container');
+const slider2 = document.querySelector('#collection-preview');
 
 slider.addEventListener('wheel', (evt) => {
 
@@ -7,7 +8,7 @@ slider.addEventListener('wheel', (evt) => {
     slider.scrollIntoView = ({behavior: 'smooth', inline: 'start'})
 });
 
-// document.querySelectorAll('#products-deal-lists li').scrollIntoView
+
 
 let isDown = false;
 let startX;
@@ -37,3 +38,10 @@ slider.addEventListener('mousemove', (e) => {
     const walk = (x - startX); // Scroll speed
     slider.scrollLeft = scrollLeft - walk;
 })
+
+slider2.addEventListener('wheel', (evt) => {
+
+    evt.preventDefault();
+    slider2.scrollLeft += evt.deltaY*4;
+    slider2.scrollIntoView = ({behavior: 'smooth', inline: 'start'})
+});
