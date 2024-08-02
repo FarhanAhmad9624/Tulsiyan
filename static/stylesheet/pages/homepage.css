@@ -213,11 +213,14 @@ h1 span{
 /* ************** PREVIEW CONTAINERS******************* */
 
 #collection-preview{
+  margin: 1em 9em;
   overflow-x:auto;
   scroll-behavior: smooth;
   white-space: nowrap;
   direction: rtl;
   scrollbar-width: none;
+  position: relative;
+  z-index: 2;
 }
 
 #collection-container{
@@ -225,6 +228,7 @@ h1 span{
   align-items: center;
   /* border: 1px solid black; */
   list-style: none;
+  gap: 3em;
 }
 
 /* hide the scrollbar */
@@ -235,18 +239,18 @@ h1 span{
 .preview-container{
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.418);
 }
 
-.preview-container li{
+#collection-container li{
   flex-shrink: 0;
 }
 
 .preview-container div{
-  height: 702px;
-  width: 379px;
+  height:30em;
+  width: 18em;
+  background-color:#FFE4B0;
   display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.527);
+  /* border: 1px solid rgba(0, 0, 0, 0.527); */
 }
 
 .preview-container a{
@@ -256,4 +260,36 @@ h1 span{
 .preview-container a p{
   display: flex;
   justify-content: center;
+  line-height: 2em;
+}
+
+p.product-name{
+  font-size: large;
+  overflow: hidden;
+  color: #f8af1d;
+  font-family: poppins;
+}
+
+p.product-price{
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+#lower-sector{
+  display: flex;
+  align-items: end;
+  padding: 4em 2em;
+  background-color: #FFF1D2;
+  height: 30em;
+  width: 100%;
+  position: relative;
+  top: -16em;
+  z-index: 1;
+}
+
+#lower-sector a{
+  color: black;
+  font-family: poppins;
+  font-size: large;
+  font-weight: bold;
 }
