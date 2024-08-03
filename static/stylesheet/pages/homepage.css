@@ -352,6 +352,7 @@ h2{
   overflow-wrap: break-word;
   max-width: 16em; /* Constrains the width of the text container to match the product container */
   margin: 0 auto; /* Center align the text within the container */
+  color: black;
 }
 
 #recent-added-products .product-name {
