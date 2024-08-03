@@ -50,6 +50,7 @@ div#upper-rectangle{
   display: flex;
   background-color: #FFF1D2;
   justify-content: end;
+  height: 5em;
 }
 
 #reviews{
@@ -73,11 +74,14 @@ div#upper-rectangle{
 
 #user-navigation #navigation-content{
   display: flex;
-  height: 5em;
   position: relative;
   top: 1em;
   right: 1em;
   gap: 1em;
+}
+
+#navigation-content{
+  height: fit-content
 }
 
 /* PRODUCT NAVIGATION *************************************** */
@@ -225,8 +229,6 @@ h1 span{
 
 #collection-container{
   display: flex;
-  align-items: center;
-  /* border: 1px solid black; */
   list-style: none;
   gap: 3em;
 }
@@ -237,13 +239,10 @@ h1 span{
 }
 
 .preview-container{
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 18em;
-}
-
-#collection-container li{
-  flex-shrink: 0;
+  flex-flow: row wrap;
+  overflow: hidden;
 }
 
 .preview-container div{
@@ -254,28 +253,30 @@ h1 span{
   /* border: 1px solid rgba(0, 0, 0, 0.527); */
 }
 
-.preview-container a{
+#collection-preview .product-link{
   text-decoration: none;
+  width: 100%;
+  overflow: hidden;
 }
 
-.preview-container a p{
+#collection-preview .product-link p{
   display: flex;
   justify-content: center;
-  /* line-clamp: 2; */
-  /* -webkit-box-orient: vertical; */
+  text-align: center;
+  max-width: 17em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0em auto;
+  white-space: normal;
 }
 
-p.product-name{
-  margin-left: 0.2em;
+#collection-preview .product-name{
   font-size: 1.5em;
-  overflow:hidden;
   color: #f8af1d;
   font-family: poppins;
-  line-clamp: 3;
-  flex-flow: row-reverse wrap;
 }
 
-p.product-price{
+#collection-preview p.product-price{
   font-size: 1em;
   color: rgba(0, 0, 0, 0.664);
 }
@@ -297,4 +298,73 @@ p.product-price{
   font-family: poppins;
   font-size: large;
   font-weight: bold;
+}
+
+/* ********************** MAIN ********************** */
+
+#recent-added-products{
+  position: absolute;
+  top: 102em;
+  width: 100%;
+}
+
+#recent-products-heading{
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+#product-container ul {
+  margin: 2em 10.96em;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 2em;
+}
+
+#product-container li {
+  display: block;
+  width: 16em;
+  flex-flow: row wrap;
+}
+
+#product-container .product-image {
+  height: 27em;
+  width: 16em;
+  background-color: #FFF1D2;
+}
+
+#product-container .product-link {
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+#product-container .product-link p {
+  display: block;
+  text-align: center;
+  word-wrap: break-word; /* Ensures words break to fit the container */
+  overflow-wrap: break-word;
+  max-width: 16em; /* Constrains the width of the text container to match the product container */
+  margin: 0 auto; /* Center align the text within the container */
+}
+
+#recent-added-products .product-name {
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-size: medium;
+  text-align: center; /* Ensures the product name is centered */
+  overflow-wrap: break-word; /* Ensures product names break to fit the container */
+  word-wrap: break-word;
+  max-width: 16em; /* Constrains the width of the text container to match the product container */
+  margin: 0 auto; /* Center align the text within the container */
+}
+
+#recent-added-products .product-price{
+  font-size: small;
 }
