@@ -238,14 +238,12 @@ h1 span{
   display: none;
 }
 
-.preview-container{
+#collection-preview li{
   display: block;
-  width: 18em;
   flex-flow: row wrap;
-  overflow: hidden;
 }
 
-.preview-container div{
+#collection-preview .product-image{
   height:30em;
   width: 18em;
   background-color:#FFE4B0;
@@ -263,7 +261,6 @@ h1 span{
   display: flex;
   justify-content: center;
   text-align: center;
-  max-width: 17em;
   word-wrap: break-word;
   overflow-wrap: break-word;
   margin: 0em auto;
