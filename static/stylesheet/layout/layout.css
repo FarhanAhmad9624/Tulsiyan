@@ -8,6 +8,11 @@
     -webkit-tap-highlight-color:transparent;
     -webkit-user-select: none;
     user-select: none;
+    
+}
+
+a{
+    -webkit-user-drag: none;
 }
 
 @media screen and (max-width: 1080px){
