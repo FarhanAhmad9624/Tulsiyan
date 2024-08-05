@@ -349,13 +349,11 @@ h2{
   overflow-wrap: break-word;
   max-width: 16em; /* Constrains the width of the text container to match the product container */
   margin: 0 auto; /* Center align the text within the container */
-  color: black;
 }
 
 #recent-added-products .product-name {
   color: black;
   font-family: Poppins, sans-serif;
-  font-size: medium;
   text-align: center; /* Ensures the product name is centered */
   overflow-wrap: break-word; /* Ensures product names break to fit the container */
   word-wrap: break-word;
@@ -363,6 +361,11 @@ h2{
   margin: 0 auto; /* Center align the text within the container */
 }
 
+#recent-added-products .product-offer{
+  color: green;
+  font-size: larger;
+}
+
 #recent-added-products .product-price{
-  
+  color: black;
 }
