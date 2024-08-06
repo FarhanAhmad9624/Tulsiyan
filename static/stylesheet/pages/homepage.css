@@ -61,6 +61,8 @@ div#upper-rectangle{
   font-size: 120%;
 }
 
+
+
 #search-bar{
   height: 1.8em;
   width: 15rem;
@@ -70,6 +72,21 @@ div#upper-rectangle{
   background-repeat: no-repeat;
   background-position: left 2% center;
   background-size: 1em;
+}
+
+#search-suggestion{
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  min-width: 20em;
+  min-height: 10em;
+  position: absolute;
+  top: 3em;
+  z-index: 1000;
+  display: none;
+  background-color: white;
+}
+
+#search-bar:focus ~ #search-suggestion, #search-suggestion:focus{
+  display: block;
 }
 
 #user-navigation #navigation-content{
@@ -93,6 +110,10 @@ div#upper-rectangle{
   border-bottom: 1px solid rgba(102, 101, 101, 0.541);
   height: 3em;
   justify-content: space-between;
+  position: sticky;
+  top: 1px;
+  background-color: rgba(255, 255, 255, 0.808);
+  z-index: 100;
 }
 
 #product-navigation ul{

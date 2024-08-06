@@ -28,9 +28,10 @@
             <div id = "user-navigation">
                 <div id = navigation-content>
                     <a id = reviews href="#">Reviews | Stories</a>
-
-                    <input type="text" id = "search-bar" name = "search-bar" title = search-bar>
-
+                    <div #search-area>
+                        <input type="text" id="search-bar" name="search-bar" title=search-bar>
+                        <div id="search-suggestion" aria-placeholder="search--"></div>
+                    </div>
                     <a id = profile href = "#" title = profile><div class = icon></div></a>
 
                     <a id = liked-items href = "#" title = liked-items><div class = icon></div></a>
@@ -53,7 +54,7 @@
                 <div id = right-navigation>
                     <ul id="right-navigation-lists">
                         <!-- filters -->
-                        <li id="10001"><a id="filters" title = filters href = "#" class = icon></a></li>
+                        <li id="10001" style="display: none;"><a id="filters" title = filters href = "#" class = icon></a></li>
 
                         <!-- collection -->
                         <li id="collection" class = drop-down><p id = collection-label>COLLECTION</p>

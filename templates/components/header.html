@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="../../static/stylesheet/pages/homepage.css">
+<link rel="stylesheet" href="../../static/stylesheet/layout/layout.css">
+<link rel="stylesheet" href="../../static/stylesheet/layout/drop-down.css">
+
+<div id = "user-navigation">
+    <div id = navigation-content>
+        <a id = reviews href="#">Reviews | Stories</a>
+
+        <div #search-area>
+            <input type="text" id="search-bar" name="search-bar" title=search-bar>
+            <div id="search-suggestion"></div>
+        </div>
+
+        <a id = profile href = "#" title = profile><div class = icon></div></a>
+
+        <a id = liked-items href = "#" title = liked-items><div class = icon></div></a>
+
+        <a id = cart href = "#" title = cart><div class = icon></div></a>
+    </div>
+</div>
+
+
+<div id = "product-navigation">
+    
+    <div id="left-navigation">
+    <ul id = "left-navigation-lists">
+        <li id="casual" class = pointer>CASUAL</li>
+        <li id="wedding" class = pointer>WEDDING</li>
+        <li id="occasion" class = pointer>OCCASION</li>
+    </ul>
+    </div>
+
+    <div id = right-navigation>
+        <ul id="right-navigation-lists">
+            <!-- filters -->
+            <li id="10001"><a id="filters" title = filters href = "#" class = icon></a></li>
+
+            <!-- collection -->
+            <li id="collection" class = drop-down><p id = collection-label>COLLECTION</p>
+                <ul id="collection-lists" class = options>
+                    <li id="11001"><a href="#"></a>Kaveri</li>
+                    <li id="11002"><a href="#"></a>Rachna</li>
+                    <li id="11003"><a href="#"></a>Kalavati</li>
+                    <li id="11004"><a href="#"></a>Gulabo</li>
+                    <li id="11005"><a href="#"></a>Gamil</li>
+                    <li id="11006"><a href="#"></a>Anamika</li>
+                </ul>
+            </li>
+
+            <!-- categories -->
+             <li id="categories" class = drop-down><p id = categories-label>CATEGORIES</p>
+                <ul id="category-list" class = options>
+                    <li id="tag">100% Authentic</li>
+                    <li class=main-categories >COTTON
+                            <li class = sub-category><a href="#">COTTON MIX</a></li>
+                            <li class = sub-category><a href="#">COTTON BLEND</a></li>
+                            <li class = sub-category><a href="#">PURE COTTON</a></li>
+                    </li>
+
+                    <li class="main-categories">SILK
+                            <li class = sub-category><a href="#">PURE SILK</a></li>
+                            <li class = sub-category><a href="#">KERLA SILK</a></li>
+                            <li class = sub-category><a href="#">BENGALI SILK</a></li>
+                            <li class = sub-category><a href="#">KASHMIRI SILK</a></li>
+                    </li>
+                    <li class="main-categories">JORJET
+                            <li class = sub-category><a href="#">PURE JORJET</a></li>
+                            <li class = sub-category><a href="#">JORJET MIX</a></li>
+                    </li>
+                    <li class="main-categories">CHIFFON
+                            <li class = sub-category><a href="#">PURE CHIFFON</a></li>
+                            <li class = sub-category><a href="#">CHIFFON MIX</a></li>
+                            <li class = sub-category><a href="#">CHIFFON-POLYSTER MIX</a></li>
+                    </li>
+                </ul>
+             </li>
+        </ul>
+    </div>   
+</div>
+
+<script src="../../static/scripts/drop-down.js"></script>
