@@ -1,0 +1,108 @@
+@font-face {
+    font-family: poppins;
+    src: url(../../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+}
+
+#login-container{
+    border: 1px solid black;
+    padding: 10em;
+}
+
+#login-container h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: poppins;
+    font-weight:bold;
+    word-spacing: 0.05em;
+}
+
+input{
+    display: block;
+    width: 30em;
+    height: 2.9em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#submit-button{
+    display: block;
+    height: 2.1em;
+    width: 22.44em;
+    margin: 0.5em 0em;
+    background-color: #FFCB66;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    font-family: poppins;
+    font-size:xx-large;
+    color: white;
+}
+
+#submit-button:active{
+    background-color: #a0803f;
+}
+
+a, p{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#continue-with-email{
+    display: block;
+    width: 45em;
+    height: 4.35em;
+    margin: 1em 0em;
+    background-color: white;
+    background-image: url(../../icons/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left 35% center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#sign-in-with-google{
+    width: 22em;
+    height: 4.35em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: url(../../icons/google.svg);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: left 32% center;
+}
+
+#sign-in-with-facebook{
+    width: 22em;
+    height: 4.35em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: url(../../icons/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: left 30% center;
+}
+
+#login-with-other-apps{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0em;
+}
+
+#sign-in-with-google:active, #sign-in-with-facebook:active, #continue-with-email:active{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+
+/* #background-gradient{
+    
+
+} */

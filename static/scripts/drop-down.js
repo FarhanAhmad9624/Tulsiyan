@@ -30,34 +30,6 @@ document.addEventListener('click', (element) => {
     }
 })
 
-//hover properties
-// document.addEventListener('mouseover', (element) => {
-//     //finding the respective options of the selected container
-    
-//     //checking whether the clicked element is a drop-down list or not
-//     for(let i = 0; i < dropDownArray.length; i++){
-
-//         //selecting the options of the selected container
-//         let dropDownId = dropDownArray[i].getAttribute('id');
-//         let containerId = containerArray[i].getAttribute('id');
-//         options = document.querySelector(`#${dropDownId} .options`);
-        
-//         let optionChildren = options.children;
-//         if(element.target == dropDownArray[i] || element.target == containerArray[i] || element.target in optionChildren || element.target == options.parentElement || element.target == options.parentElement.pare){
-//             try{
-//                 display('block');
-//             }catch{}
-//         }
-//         else {
-//             console.log(options);
-//             console.log(element.target);
-//             // try{
-//             //     options.style.display = 'none';
-//             // }catch{}
-//         }
-    
-//     }
-// })
 
 function display(value){
     options.style.display = value;
