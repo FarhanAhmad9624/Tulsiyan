@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = description content = "Tulsiyan-product">
+    <meta name = author content = farhanahmadpy@gmail.com>
+    <meta property = "og:site_name" content = "Tulsiyan">
+    <meta property = "og:type" content="website">
+    <meta property = "og:description" content = "Tulsiyan-product">
+    <title>Tulsiyan: --product</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+
+    <link rel="stylesheet" href="../../static/stylesheet/layout/drop-down.css">
+    <link rel="stylesheet" href="../../static/stylesheet/layout/layout.css">
+</head>
+<body>
+    <div id="header">
+        <script>
+            function loadHTML(elementId, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => document.getElementById(elementId).innerHTML = data)
+        .catch(error => console.error('Error loading HTML:', error));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadHTML('header', '../components/header.html');
+      // Similarly load footer if you have a footer.html
+      // loadHTML('footer', 'footer.html');
+    });
+        </script>
+    </div>
+</body>
+    <script src="../../static/scripts/drop-down.js"></script>
+</html>
