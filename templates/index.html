@@ -25,18 +25,34 @@
         <!-- UPPER BODY SECTION ************************************************-->
         <div id="upper-rectangle">
 
-            <div id = "user-navigation">
-                <div id = navigation-content>
-                    <a id = reviews href="#">Reviews | Stories</a>
+            <div id="user-navigation">
+                <div id=navigation-content>
+                    <a id=reviews href="#">Reviews | Stories</a>
                     <div #search-area>
                         <input type="text" id="search-bar" name="search-bar" title=search-bar>
                         <div id="search-suggestion" aria-placeholder="search--"></div>
                     </div>
-                    <a id = profile href = "./login" title = profile><div class = icon></div></a>
-
-                    <a id = liked-items href = "#" title = liked-items><div class = icon></div></a>
-
-                    <a id = cart href = "#" title = cart><div class = icon></div></a>
+            
+            
+                    <div id=user class="drop-down icon">
+                        <div id="profile" class=icon></div>
+                        <ul id="profile-data" class=options style="z-index: 10000;">
+                            <li><a class = user-details id=user-name>Demo user name</a></li>  
+                            <li><p class = user-details id="user-number">+91 xxxxy xxxxy</p></li>
+                            <li><p class = user-details id="user-area-pincode">xxxxxx</p></li>
+                            <li><a class = user-details id="user-orders">ORDERS</a></li>
+                            <li><a class = user-details id="user-payment-methods">PAYMENT METHODS</a></li>
+                            <li><a class = user-details id=user-help href="#">contact us</a></li>
+                        </ul>
+                    </div>
+            
+                    <a id=liked-items href="#" title=liked-items>
+                        <div class=icon></div>
+                    </a>
+            
+                    <a id=cart href="#" title=cart>
+                        <div class=icon></div>
+                    </a>
                 </div>
             </div>
 

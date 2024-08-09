@@ -10,5 +10,5 @@ def main_page():
 def login_page():
     return render_template('./login.html')
 
-# if __name__ == "__main__":
-#     app.run(debug=True)   
+if __name__ == "__main__":
+    app.run(debug=True)   

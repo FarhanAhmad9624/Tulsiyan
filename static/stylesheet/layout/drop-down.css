@@ -9,6 +9,7 @@
     background-color: white;
     width: 12em;
     display: none;
+    border: 1px solid rgba(0, 0, 0, 0.123);
 }
 
 .options li{

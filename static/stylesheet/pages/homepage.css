@@ -28,10 +28,18 @@ div#upper-rectangle{
 
 /* USER NAVIGATION**************************************   */
 
-#profile div{
+#profile{
   width: 1.5em;
   height: 1.5em;
   background-image: url(../../icons/profile-thin.svg);
+}
+
+#profile-data{
+  margin-left: -6em;
+}
+
+#profile .user-details{
+  display: block;
 }
 
 #liked-items div{
@@ -161,7 +169,7 @@ ul#right-navigation-lists{
 
 .sub-category a{
   font-size: 0.8em;
-  color: #767676;
+  color: #222222;
   text-decoration: none;
 }
 
